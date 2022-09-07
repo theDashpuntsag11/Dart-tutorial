@@ -21,4 +21,8 @@ void main(List<String> args) {
   print(aListOfStrings);
   print(aSetOfStrings);
   print(aMapOfStringsToInts);
+
+  print(aListOfInts);
+  print(aSetOfInts);
+  print(aMapOfIntToDouble);
 }
