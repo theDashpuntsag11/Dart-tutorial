@@ -1,5 +1,5 @@
 /**
- * 
+ *  I don't really know about collections
  * 
  */
 

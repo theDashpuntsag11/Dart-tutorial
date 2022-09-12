@@ -15,4 +15,9 @@ class MyObject {
   void someMethods() {
     print("someMethod() invoked");
   }
+
+  @override
+  String toString() {
+    return 'MyObject(someIntProperty: $someIntProperty, someNullIntProperty: $someNullIntProperty, someStringProperty: $someStringProperty, someNullStringProperty: $someNullStringProperty)';
+  }
 }

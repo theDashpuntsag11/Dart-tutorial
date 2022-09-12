@@ -14,4 +14,6 @@ void main(List<String> args) {
   print('hasEmpty after is: $hasEmpty');
 
   final intList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  bool isOdd = intList.any((element) => element.isOdd);
+  print('isOdd: $isOdd');
 }
