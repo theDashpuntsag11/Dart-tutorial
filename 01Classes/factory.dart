@@ -37,4 +37,6 @@ main() {
 
   final circle1 = shapeFactory('circle');
   final square1 = shapeFactory('square');
+  print(circle1.area);
+  print(square1.area);
 }
