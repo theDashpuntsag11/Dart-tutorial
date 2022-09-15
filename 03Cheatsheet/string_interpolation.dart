@@ -1,9 +1,6 @@
 import 'UsedClasses/point.dart';
 
 main() {
-  print(
-      '----------------------------------- String interpolation ------------------------------------------');
-
   //To put the value of an expression inside a string, use ${expression}. If the expression is an identifier, you can omit the {}.
   int x = 5;
   DateTime dateTime = DateTime.now();
