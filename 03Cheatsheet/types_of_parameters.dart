@@ -5,12 +5,12 @@
  * 
  */
 
-//  This is function with positional parameters
+//  This is a function with positional parameters
 int sumUp(int a, int b, int c) {
   return a + b + c;
 }
 
-// This is function with optional positional parameters
+// This is a function with optional positional parameters
 // Optional positional parameters are always last in a function's parametr list
 // Their initial value is null, Unless you provide a another default value
 int sumUpToFive(int a, [int? b, int? c, int? d, int? e]) {
@@ -22,8 +22,17 @@ int sumUpToFive(int a, [int? b, int? c, int? d, int? e]) {
   return sum;
 }
 
+// This is a function with named parameters
+// Using a curly brace syntax at the end of the parameter list, you can define parameters that have names.
+// Named parameters are optional unless they’re explicitly marked as required.
+int? sumUpTwo({required int? a, int? b}) {
+  return a! + b!;
+}
+
 void main(List<String> args) {
-  print("hello");
   print('sumUp() = ' + sumUp(1, 2, 3).toString());
   print('sumUpToFive = ' + sumUpToFive(1, 2, 3, 4, 5).toString());
+  print('sumUpToTwo = ' + sumUpTwo(a: 1, b: 3).toString());
+  // This one would cause some exeption
+  print('sumUpToTwo = ' + sumUpTwo(a: 1).toString());
 }
