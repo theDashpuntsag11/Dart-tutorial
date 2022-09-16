@@ -30,9 +30,16 @@ int? sumUpTwo({required int? a, int? b}) {
 }
 
 void main(List<String> args) {
+  // Positional parameters
   print('sumUp() = ' + sumUp(1, 2, 3).toString());
+
+  // Optional positioned parameters
   print('sumUpToFive = ' + sumUpToFive(1, 2, 3, 4, 5).toString());
+
+  // Named parameters
   print('sumUpToTwo = ' + sumUpTwo(a: 1, b: 3).toString());
+
   // This one would cause some exeption
+  // Because variable a's type is int, but variable b's type is null
   print('sumUpToTwo = ' + sumUpTwo(a: 1).toString());
 }
