@@ -12,6 +12,7 @@ void main(List<String> args) {
    */
 
   // The new keyword is optional in Dart version 2
+  // Dart provides a handy shortcut for assigning values to properties in a constructor: use this.propertyName when declaring the constructor:
   var bike = Bicycle(
     1,
     2,
