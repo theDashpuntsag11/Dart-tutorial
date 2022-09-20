@@ -13,19 +13,19 @@ void main(List<String> args) {
   //  The try keyword works as it does in most other languages.
   //  Use the on keyword to filter for specific exceptions by type, and the catch keyword to get a reference to the exception object.
   //  If you can’t completely handle the exception, use the rethrow keyword to propagate the exception:
-  try {
-    breedMoreLlamas();
-  } on OutOfLlamasException {
-    // A specific exception
-    buyMoreLlamas();
-  } on Exception catch (e) {
-    // Anything else that is an exception
-    print('Unknown exception: $e');
-  } catch (e) {
-    // No specified type, handles all
-    print('Something really unknown: $e');
-    rethrow;
-  }
+  // try {
+  //   breedMoreLlamas();
+  // } on OutOfLlamasException {
+  //   // A specific exception
+  //   buyMoreLlamas();
+  // } on Exception catch (e) {
+  //   // Anything else that is an exception
+  //   print('Unknown exception: $e');
+  // } catch (e) {
+  //   // No specified type, handles all
+  //   print('Something really unknown: $e');
+  //   rethrow;
+  // }
 
   print('hello');
 }

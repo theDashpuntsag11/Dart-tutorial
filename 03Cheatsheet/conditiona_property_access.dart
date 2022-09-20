@@ -14,7 +14,12 @@ void main(List<String> args) {
   // You can chain multiple uses of ?. together in a single expression:
   print(
       "myObject.someString after multile ? operator : ${myObject?.someStringProperty?.toUpperCase()}");
+  print(
+      "myObject.someNullString after multile ? operator : ${myObject?.someNullStringProperty?.toUpperCase()}");
 
+  print(
+      ' -----------------------------------------------------------------------------');
+  print("upperCaseId() is an function with conditional property");
   print("upperCaseIt() with null param: ${upperCaseIt(null)} ");
   print("upperCaseIt() with \"String\" params: ${upperCaseIt("String")} ");
 }
