@@ -7,7 +7,6 @@ void main(List<String> args) {
    *  Dart core concepts
    *    - Each variable (even if it's a number) must either be initialized or be declared nullable by adding ? to its type declaration.
    *    - Semicolon is import in dart.
-   *    - 
    * 
    */
 

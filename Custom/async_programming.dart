@@ -1,12 +1,14 @@
+import 'dart:async';
+
 /**
  *   A Stream is a sequence of asynchronous data
- * 
  * 
  */
 
 // By using async* keyword we are able to use yeild keyword and return a Stream of data
 Stream<int> countStream(int max) async* {
   for (int i = 0; i <= max; i++) {
+    // Timer(Duration(seconds: 1), () => print("yielding: " + i.toString()));
     print("yielding: " + i.toString());
     yield i;
   }

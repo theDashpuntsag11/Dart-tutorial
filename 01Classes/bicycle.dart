@@ -1,16 +1,7 @@
-// This is how you create a class in dart
-class Bicycle {
-  //Class Properties
-  int cadance;
-  int gear;
-  int _speed = 0;
-
-  /** 
+/** 
    *   @Dashpuntsag
    * 
    *  Few thing you must Know about dart classes 
-   *    - Dart does not require a modifier[private, public, protected]
-   *    - But you can declare private property/variable by adding _ to start if the property/variable's name. 
    *    - Dart uses two-character indentation by convention instead of four.
    *    - Dart class constructors does not require a body
    *    - Dart doesn't support overloading constructors and handles this situation differently, as you'll see in this section.
@@ -20,8 +11,16 @@ class Bicycle {
    * 
    * */
 
-  // Using this in a constructor's parameter list is a handy shortcut for assigning values to instance variables.
+// This is how you create a class in dart
+class Bicycle {
+  // Class Properties
+  // Dart does not require a modifier[private, public, protected]
+  // But you can declare private property/variable by adding _ to start if the property/variable's name.
+  int cadance;
+  int gear;
+  int _speed = 0;
 
+  // Using this in a constructor's parameter list is a handy shortcut for assigning values to instance variables.W
   /**
    *  Following code is equivalent to this constructor:
    *    Bicycle(int candance, int speed, int gear)
