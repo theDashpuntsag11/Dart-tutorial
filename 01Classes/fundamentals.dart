@@ -1,16 +1,31 @@
 /**
- *      Dart Core concepts
- *  
- * 
- * 
+ *      @Dart Core concepts
+ *  - Main function will invoke initially everytime dart code compiles.
+ *  - You can pass some argument in CLI via args. 
+ *  - Syntax 
+ *    + Semicolon is important in Dart.
+ *    + The {new} keyword is optional in dart 2.0.0
  * 
  */
 
-void main(List<String> args) {}
+void main(List<String> args) {
+  /**
+   *      @Declaring variables in dart
+   *  - Each variable must either be initialized or be declared nullable by 
+   *    adding ? to its type declaration.
+   *  - {var} is a dynamic variable type in dart
+   *  - {final} keyword is for declaring non-changed variable
+   * 
+   */
+  var bike = Bicycle(1, 3);
+  Bicycle bikeWithType = Bicycle(2, 3);
+  Bicycle? nullableBike;
+  final finalBike = Bicycle(3, 3);
+}
 
 class Bicycle {
   /**
-   *      Class properties
+   *      @Class properties
    *  - Dart variables does not require a modifierp[public, private, protected]
    *  - You can declare private variable by adding _ to start of the variable name
    * 
