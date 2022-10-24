@@ -1,3 +1,4 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 /**
  *      @Dart Core concepts
  *  - Main function will invoke initially everytime dart code compiles.
@@ -23,6 +24,7 @@ void main(List<String> args) {
   final finalBike = Bicycle(3, 3);
 }
 
+// Normal class
 class Bicycle {
   /**
    *      @Class properties
@@ -62,5 +64,26 @@ class Bicycle {
 
   void speedUp(int increment) {
     _speed += increment;
+  }
+}
+
+/**
+ *      @Class with named constructor
+ *  + Named parameters are enclosed in curly braces ({}).
+ */
+class MotoCycle {
+  int motorVolume;
+  int tires;
+  int _speed = 0;
+
+  MotoCycle({required this.motorVolume, required this.tires});
+
+  @override
+  String toString() => 'MotoCycle(motorVolume: $motorVolume, tires: $tires, _speed: $_speed)';
+
+  int get speed => _speed;
+
+  void speedUp(int inc) {
+    this._speed += inc;
   }
 }
